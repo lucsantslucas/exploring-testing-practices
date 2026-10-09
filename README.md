@@ -44,11 +44,11 @@ Escolha uma prática ou dado de teste relevante e explique com suas próprias pa
 
 ## Respostas
 
-Repositório: https://github.com/b12io/orchestra
+**Repositório:** https://github.com/b12io/orchestra
 
-URL TestMiner: https://andrehora.github.io/testminer/#b12io/orchestra
+**URL TestMiner:** https://andrehora.github.io/testminer/#b12io/orchestra
 
-Explicação: 
+**Explicação:** 
 Bem, no repositório que analisei (Orchestra), o ponto mais relevante, acredito, é a forte presença de `Test Helpers`. São 46 desses arquivos de suporte para 41 arquivos de teste principais e 2 *fixtures* (o que pode ser visto na figura abaixo). Com esse número de arquivos auxiliares superando o número de arquivos de teste em si, entendo que o intuito foi focar em reutilização e abstração (ex.: `init`, `workflow`), o que reduz código duplicado e simplifica a escrita de novos cenários / situações.
 
 <img width="842" height="572" alt="image" src="https://github.com/user-attachments/assets/c878abd1-1b06-4ddb-a39e-0d799fdad41c" />
