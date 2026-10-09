@@ -37,6 +37,15 @@ Based on the collected data, select a relevant testing practice or metric and ex
 
 ## Answers
 
-**1. Selected repository:** `<REPOSITORY_URL_HERE>`
+**1. Selected repository:** https://github.com/b12io/orchestra | https://andrehora.github.io/testminer/#b12io/orchestra
 
-**2. Explanation:** `<YOUR_EXPLANATION_HERE>`
+**2. Explanation:**
+Well, in the repository I analysed (Orchestra), the most significant aspect, I believe, is the strong presence of `Test Helpers`. There are 46 of these support files compared to 41 main test files and 2 fixtures (as shown in the figure below). With the number of helper files exceeding the number of actual test files, I believe that the aim was to focus on reusability and abstraction (e.g., `init`, `workflow`): this reduces code duplication and simplifies the process of writing new scenarios or test cases.
+
+<img width="842" height="572" alt="image" src="https://github.com/user-attachments/assets/c878abd1-1b06-4ddb-a39e-0d799fdad41c" />
+
+Upon analysing the `Test History` graph, I also noticed that the test suite grew steadily alongside the system: in version `v0.1.0`, there were 210 source code files and 12 test files; by version `v0.2.39`, this had risen to approximately 400 source code files, with 36 tests and 46 helpers; finally, in version `v1.0.61`, the system reached 510 source code files and 41 test files. The test history can be seen in the following figure:
+
+<img width="827" height="457" alt="image" src="https://github.com/user-attachments/assets/18c25e9b-bd7d-4fd1-96bc-5c1366ad8915" />
+
+One final point I found interesting was that the project combines Python dependencies (such as `coverage` for measuring coverage and `moto` for mocking) with JavaScript / TypeScript interface tests (using `Jest` and `Testing Library`).
