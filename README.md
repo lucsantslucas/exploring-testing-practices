@@ -49,7 +49,7 @@ Repositório: https://github.com/b12io/orchestra
 URL TestMiner: https://andrehora.github.io/testminer/#b12io/orchestra
 
 Explicação: 
-Bem, no repositório que analise (Orchestra), o ponto mais relevante, acredito, é a forte presença de `Test Helpers`. São 46 desses arquivos de suporte para 41 arquivos de teste principais e 2 *fixtures* (o que pode ser visto na figura abaixo). Com esse número de arquivos auxiliares superando o número de arquivos de teste em si, entendo que o intuito foi focar em reutilização e abstração (ex.: `init`, `workflow`), reduzindo código duplicado e simplificando a escrita de novos cenários / situações.
+Bem, no repositório que analisei (Orchestra), o ponto mais relevante, acredito, é a forte presença de `Test Helpers`. São 46 desses arquivos de suporte para 41 arquivos de teste principais e 2 *fixtures* (o que pode ser visto na figura abaixo). Com esse número de arquivos auxiliares superando o número de arquivos de teste em si, entendo que o intuito foi focar em reutilização e abstração (ex.: `init`, `workflow`), o que reduz código duplicado e simplifica a escrita de novos cenários / situações.
 
 <img width="842" height="572" alt="image" src="https://github.com/user-attachments/assets/c878abd1-1b06-4ddb-a39e-0d799fdad41c" />
 
@@ -57,5 +57,5 @@ Ao analisar o gráfico de `Test History`, percebi também que o conjunto de test
 
 <img width="827" height="457" alt="image" src="https://github.com/user-attachments/assets/18c25e9b-bd7d-4fd1-96bc-5c1366ad8915" />
 
-Um último ponto que achei interessante foi que o projeto combina dependência de Python (como `coverage` para medir cobertura e `moto` para *mocking*) com testes de interface em JavaScript / TypeScript (com `Jest` e `Testing Library`).
+Um último ponto que achei interessante foi que o projeto combina dependências de Python (como `coverage` para medir cobertura e `moto` para *mocking*) com testes de interface em JavaScript / TypeScript (com `Jest` e `Testing Library`).
 
